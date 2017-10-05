@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "284876987503",
+    "firebase_url": "https://flutter-flat-app.firebaseio.com",
+    "project_id": "flutter-flat-app",
+    "storage_bucket": "flutter-flat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284876987503:android:1736c72b265b7823",
+        "android_client_info": {
+          "package_name": "com.yourcompany.flutterflatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284876987503-5ndd7rtele0711d3064ketnojq512c2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ufT5uCpcw4oNw2YurOXylGpSNj9xcZM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
