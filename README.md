@@ -1,6 +1,7 @@
+# FlatApp-Flutter
+
 # Demo
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
-# FlatApp-Flutter
 
 A new Flutter project.
 We have written few pages of our famous React Native Starter Kit in Flutter! And we are quite impressed with the result.
