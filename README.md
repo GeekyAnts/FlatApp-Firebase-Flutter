@@ -16,7 +16,7 @@ Note: Make sure your flutter environment is setup.
 
 #### Installation
 
-On the command prompt run the following commands
+In the command terminal run the following commands
 
     $ git clone git@github.com:GeekyAnts/FlatApp-Flutter.git
     $ cd FlatApp-Flutter/
@@ -29,7 +29,7 @@ Replace the `google-service.json` in `android/app` folder with your `google-serv
 ##### For IOS
 Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`
 
-##### Start your Flutter run by running the command
+##### Start your Flutter project by running the command
     $ flutter run
 
 # Simulate for iOS
