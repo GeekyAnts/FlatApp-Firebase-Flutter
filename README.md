@@ -8,8 +8,8 @@ This app is a free open source project that enables the developer to quickly get
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
 
 # Features
-    Form Validation
-    Firebase Authentication
+##### Form Validation
+##### Firebase Authentication
     
 ## Getting Started
 Note: Make sure your flutter environment is setup.
@@ -49,6 +49,6 @@ Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleS
     Run the following command in your terminal.
     $ flutter run
     
-##### Check out Flutter’s online [documentation](http://flutter.io/). for help getting start with your Flutter project 
+##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project 
 
 
