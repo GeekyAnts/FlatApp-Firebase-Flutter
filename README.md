@@ -1,9 +1,8 @@
 # FlatApp-Firebase-Flutter
 
-A new Flutter project.
-We have written few pages of our famous React Native Starter Kit in Flutter! And we are quite impressed with the result.
+A new Flutter project from GeekyAnts.
 
-This app is a free open source project that enables the developer to quickly get started with the flutter application development. This project is integrated with the firebase for the user authentication and contains all the basic features that is required to built an amazing flutter application. 
+This app is a free open source project that enables the developer to quickly get started with the flutter application development. We have created few screens of our famous React Native Starter Kit in Flutter! And we are quite impressed with the result. This project is integrated with the firebase for the user authentication and contains all the basic features that is required to built an amazing flutter application. 
 
 # Demo
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
@@ -13,6 +12,7 @@ This app is a free open source project that enables the developer to quickly get
     Firebase Authentication
     
 ## Getting Started
+Note: Make sure your flutter environment is setup.
 
 #### Installation
 
@@ -49,6 +49,6 @@ Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleS
     Run the following command in your terminal.
     $ flutter run
     
-##### For help getting started with Flutter, view online [documentation](http://flutter.io/).
+##### Check out Flutter’s online [documentation](http://flutter.io/). for help getting start with your Flutter project 
 
 
