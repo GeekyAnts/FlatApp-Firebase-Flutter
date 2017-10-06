@@ -1,37 +1,35 @@
 # FlatApp-Firebase-Flutter
 
-A new Flutter project from GeekyAnts.
+A new open-source Flutter project from GeekyAnts that enables the developer to quickly get started with the Flutter application development. We have recreated a few screens of our famous React Native Starter Kit in Flutter!
 
-This app is a free open source project that enables the developer to quickly get started with the Flutter application development. We have recreated few screens of our famous React Native Starter Kit in Flutter!
-
-This project is integrated with Firebase for user authentication and contains all the basic features that are required to built an amazing Flutter application. 
+This project is integrated with Firebase for user authentication and contains all the basic features that are required to build an amazing Flutter app. 
 
 # Demo
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
 
 # Features
-##### Form Validation
-##### Firebase Authentication
+* Form Validation
+* Firebase Authentication
     
 ## Getting Started
-Note: Make sure your Flutter environment is setup.
+**Note:** Make sure your Flutter environment is setup.
 
 #### Installation
 
-In the command terminal run the following commands
+In the command terminal, run the following commands:
 
     $ git clone git@github.com:GeekyAnts/FlatApp-Flutter.git
     $ cd FlatApp-Flutter/
     
 #### Setup Flutter Firebase integration
-Check the [documentation](https://codelabs.developers.google.com/codelabs/flutter-firebase/#4)
+Check out the [documentation](https://codelabs.developers.google.com/codelabs/flutter-firebase/#4) to setup Flutter Firebase integration.
 
 ##### For Android
-Replace the `google-service.json` in `android/app` folder with your `google-service.json`.
+In `android/app` folder replace the `google-service.json` with your `google-service.json`.
 ##### For iOS
-Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`.
+In `ios/Runner` folder replace the `GoogleService-Info.plist` with your `GoogleService-Info.plist`.
 
-##### Start your Flutter project by running the command
+##### Start your Flutter project by running the command:
     $ flutter run
 
 # Simulate for iOS
