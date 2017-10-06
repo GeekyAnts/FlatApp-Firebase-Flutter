@@ -63,7 +63,7 @@ class SignUpScreenState extends State<SignUpScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 new SizedBox(
-                    height: screenSize.height / 2 - 20,
+                    height: screenSize.height / 2 + 20,
                     child: new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -132,7 +132,10 @@ class SignUpScreenState extends State<SignUpScreen> {
                           ],
                         )),
                     new TextButton(
-                        buttonName: "Terms & Condition", onPressed: _onPressed,buttonTextStyle: buttonTextStyle,)
+                      buttonName: "Terms & Condition",
+                      onPressed: _onPressed,
+                      buttonTextStyle: buttonTextStyle,
+                    )
                   ],
                 )
               ],
