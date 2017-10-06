@@ -4,7 +4,7 @@ A new Flutter project from GeekyAnts.
 
 This app is a free open source project that enables the developer to quickly get started with the Flutter application development. We have recreated few screens of our famous React Native Starter Kit in Flutter!
 
-This project is integrated with Firebase for the user authentication and contains all the basic features that are required to built an amazing Flutter application. 
+This project is integrated with Firebase for user authentication and contains all the basic features that are required to built an amazing Flutter application. 
 
 # Demo
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
@@ -28,7 +28,7 @@ Check the [documentation](https://codelabs.developers.google.com/codelabs/flutte
 
 ##### For Android
 Replace the `google-service.json` in `android/app` folder with your `google-service.json`.
-##### For IOS
+##### For iOS
 Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`.
 
 ##### Start your Flutter project by running the command
