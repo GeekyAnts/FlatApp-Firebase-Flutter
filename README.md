@@ -1,12 +1,12 @@
-# FlatApp-Flutter
-
-# Demo
-![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
+# FlatApp-Firebase-Flutter
 
 A new Flutter project.
 We have written few pages of our famous React Native Starter Kit in Flutter! And we are quite impressed with the result.
 
 This app is a free open source project that enables the developer to quickly get started with the flutter application development. This project is integrated with the firebase for the user authentication and contains all the basic features that is required to built an amazing flutter application. 
+
+# Demo
+![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
 
 # Features
     Form Validation
