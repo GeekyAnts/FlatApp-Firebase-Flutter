@@ -2,7 +2,8 @@
 
 A new Flutter project from GeekyAnts.
 
-This app is a free open source project that enables the developer to quickly get started with the flutter application development. We have created few screens of our famous React Native Starter Kit in Flutter! And we are quite impressed with the result. This project is integrated with the firebase for the user authentication and contains all the basic features that is required to built an amazing flutter application. 
+This app is a free open source project that enables the developer to quickly get started with the Flutter application development. We have recreated few screens of our famous React Native Starter Kit in Flutter!. 
+This project is integrated with the firebase for the user authentication and contains all the basic features that is required to built an amazing Flutter application. 
 
 # Demo
 ![Demo](https://github.com/GeekyAnts/FlatApp-Firebase-Flutter/raw/master/screenshots/FlatApp-TwoScreens.gif)
@@ -12,7 +13,7 @@ This app is a free open source project that enables the developer to quickly get
 ##### Firebase Authentication
     
 ## Getting Started
-Note: Make sure your flutter environment is setup.
+Note: Make sure your Flutter environment is setup.
 
 #### Installation
 
@@ -25,9 +26,9 @@ In the command terminal run the following commands
 Check the [documentation](https://codelabs.developers.google.com/codelabs/flutter-firebase/#4)
 
 ##### For Android
-Replace the `google-service.json` in `android/app` folder with your `google-service.json`
+Replace the `google-service.json` in `android/app` folder with your `google-service.json`.
 ##### For IOS
-Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`
+Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`.
 
 ##### Start your Flutter project by running the command
     $ flutter run
@@ -50,6 +51,6 @@ Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleS
     Run the following command in your terminal.
     $ flutter run
     
-##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project 
+##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project. 
 
 
