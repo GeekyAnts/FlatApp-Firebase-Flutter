@@ -29,6 +29,7 @@ Replace the `google-service.json` in `android/app` folder with your `google-serv
 ##### For IOS
 Replace the `GoogleService-Info.plist` in `ios/Runner` folder with your `GoogleService-Info.plist`
 
+##### Start your Flutter run by running the command
     $ flutter run
 
 # Simulate for iOS
