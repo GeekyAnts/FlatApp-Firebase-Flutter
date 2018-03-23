@@ -121,7 +121,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   FirebaseUI: 6e99ff95e369f5858232e4f65bff215458fe8469
-  Flutter: d674e78c937094a75ac71dd77e921e840bea3dbf
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
   google_sign_in: 24ea34feed2d7d04e957cd1c4daf063c488532c2
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af

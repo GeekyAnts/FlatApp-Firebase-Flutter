@@ -7,31 +7,28 @@ class InputField extends StatelessWidget {
   Color textFieldColor, iconColor;
   bool obscureText;
   double bottomMargin;
-  TextStyle textStyle,hintStyle;
+  TextStyle textStyle, hintStyle;
   var validateFunction;
   var onSaved;
   Key key;
 
   //passing props in the Constructor.
-  //Java like style
-  InputField({
-    this.key,
-    this.hintText,
-    this.obscureText,
-    this.textInputType,
-    this.textFieldColor,
-    this.icon,
-    this.iconColor,
-    this.bottomMargin,
-    this.textStyle,
-    this.validateFunction,
-    this.onSaved,
-    this.hintStyle
-  });
+  InputField(
+      {this.key,
+      this.hintText,
+      this.obscureText,
+      this.textInputType,
+      this.textFieldColor,
+      this.icon,
+      this.iconColor,
+      this.bottomMargin,
+      this.textStyle,
+      this.validateFunction,
+      this.onSaved,
+      this.hintStyle});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return (new Container(
         margin: new EdgeInsets.only(bottom: bottomMargin),
         child: new DecoratedBox(
@@ -46,13 +43,13 @@ class InputField extends StatelessWidget {
             validator: validateFunction,
             onSaved: onSaved,
             decoration: new InputDecoration(
-                hintText: hintText,
-                hintStyle: hintStyle,
-                icon: new Icon(
-                  icon,
-                  color: iconColor,
-                ),
-                hideDivider: true),
+              hintText: hintText,
+              hintStyle: hintStyle,
+              icon: new Icon(
+                icon,
+                color: iconColor,
+              ),
+            ),
           ),
         )));
   }
