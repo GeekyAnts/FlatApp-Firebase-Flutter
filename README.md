@@ -12,14 +12,14 @@ This project is integrated with Firebase for user authentication and contains al
 * Firebase Authentication
     
 ## Getting Started
-**Note:** Make sure your Flutter environment is setup.
+**Note:** Make sure your Flutter environment is [setup](https://flutter.io/getting-started/).
 
 #### Installation
 
 In the command terminal, run the following commands:
 
-    $ git clone git@github.com:GeekyAnts/FlatApp-Flutter.git
-    $ cd FlatApp-Flutter/
+    $ git clone git@github.com:GeekyAnts/FlatApp-Firebase-Flutter.git
+    $ cd FlatApp-Firebase-Flutter/
     
 #### Setup Flutter Firebase integration
 Check out the [documentation](https://codelabs.developers.google.com/codelabs/flutter-firebase/#4) to setup Flutter Firebase integration.
