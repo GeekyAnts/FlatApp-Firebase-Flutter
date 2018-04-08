@@ -5,6 +5,7 @@ TextStyle headingStyle = new TextStyle(
   fontSize: 22.0,
   fontWeight: FontWeight.bold,
 );
+
 DecorationImage backgroundImage = new DecorationImage(
   image: new ExactAssetImage('assets/signup-screen-background.png'),
   fit: BoxFit.cover,

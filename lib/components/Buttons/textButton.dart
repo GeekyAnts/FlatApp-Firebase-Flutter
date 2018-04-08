@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
 class TextButton extends StatelessWidget {
-  String buttonName;
+  final String buttonName;
   final VoidCallback onPressed;
-  TextStyle textStyle,buttonTextStyle;
+  final TextStyle textStyle = const TextStyle(
+      color: const Color(0XFFFFFFFF),
+      fontSize: 16.0,
+      fontWeight: FontWeight.bold);
+
+  final TextStyle buttonTextStyle;
+
   //passing props in react style
   TextButton({
     this.buttonName,
@@ -14,11 +20,8 @@ class TextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (new FlatButton(
-      child: new  Text(
-        buttonName,
-        textAlign: TextAlign.center,
-        style: buttonTextStyle
-      ),
+      child: new Text(buttonName,
+          textAlign: TextAlign.center, style: buttonTextStyle),
       onPressed: onPressed,
     ));
   }
