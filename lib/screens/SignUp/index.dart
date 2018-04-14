@@ -63,7 +63,7 @@ class SignUpScreenState extends State<SignUpScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 new SizedBox(
-                    height: screenSize.height / 2 + 20,
+                    height: screenSize.height / 2,
                     child: new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -74,69 +74,73 @@ class SignUpScreenState extends State<SignUpScreen> {
                         )
                       ],
                     )),
-                new Column(
-                  children: <Widget>[
-                    new Form(
-                        key: _formKey,
-                        autovalidate: _autovalidate,
-                        //onWillPop: _warnUserAboutInvalidData,
-                        child: new Column(
-                          children: <Widget>[
-                            new InputField(
-                              hintText: "Username",
-                              obscureText: false,
-                              textInputType: TextInputType.text,
-                              textStyle: textStyle,
-                              textFieldColor: textFieldColor,
-                              icon: Icons.person_outline,
-                              iconColor: Colors.white,
-                              bottomMargin: 20.0,
-                              validateFunction: _validations.validateName,
-                              onSaved: (String name) {
-                                newUser.displayName = name;
-                              },
-                            ),
-                            new InputField(
-                                hintText: "Email",
+                new SizedBox(
+                  height: screenSize.height / 2,
+                  child: new Column(
+                    children: <Widget>[
+                      new Form(
+                          key: _formKey,
+                          autovalidate: _autovalidate,
+                          //onWillPop: _warnUserAboutInvalidData,
+                          child: new Column(
+                            children: <Widget>[
+                              new InputField(
+                                hintText: "Username",
                                 obscureText: false,
-                                textInputType: TextInputType.emailAddress,
-                                textStyle: textStyle,
-                                textFieldColor: textFieldColor,
-                                icon: Icons.mail_outline,
-                                iconColor: Colors.white,
-                                bottomMargin: 20.0,
-                                validateFunction: _validations.validateEmail,
-                                onSaved: (String email) {
-                                  newUser.email = email;
-                                }),
-                            new InputField(
-                                hintText: "Password",
-                                obscureText: true,
                                 textInputType: TextInputType.text,
                                 textStyle: textStyle,
                                 textFieldColor: textFieldColor,
-                                icon: Icons.lock_open,
+                                icon: Icons.person_outline,
                                 iconColor: Colors.white,
-                                bottomMargin: 40.0,
-                                validateFunction: _validations.validatePassword,
-                                onSaved: (String password) {
-                                  newUser.password = password;
-                                }),
-                            new RoundedButton(
-                                buttonName: "Continue",
-                                onTap: _handleSubmitted,
-                                width: screenSize.width,
-                                height: 50.0,
-                                bottomMargin: 10.0,
-                                borderWidth: 1.0)
-                          ],
-                        )),
-                    new TextButton(
-                      buttonName: "Terms & Condition",
-                      onPressed: _onPressed,
-                      buttonTextStyle: buttonTextStyle,
-                    )
-                  ],
+                                bottomMargin: 20.0,
+                                validateFunction: _validations.validateName,
+                                onSaved: (String name) {
+                                  newUser.displayName = name;
+                                },
+                              ),
+                              new InputField(
+                                  hintText: "Email",
+                                  obscureText: false,
+                                  textInputType: TextInputType.emailAddress,
+                                  textStyle: textStyle,
+                                  textFieldColor: textFieldColor,
+                                  icon: Icons.mail_outline,
+                                  iconColor: Colors.white,
+                                  bottomMargin: 20.0,
+                                  validateFunction: _validations.validateEmail,
+                                  onSaved: (String email) {
+                                    newUser.email = email;
+                                  }),
+                              new InputField(
+                                  hintText: "Password",
+                                  obscureText: true,
+                                  textInputType: TextInputType.text,
+                                  textStyle: textStyle,
+                                  textFieldColor: textFieldColor,
+                                  icon: Icons.lock_open,
+                                  iconColor: Colors.white,
+                                  bottomMargin: 40.0,
+                                  validateFunction:
+                                      _validations.validatePassword,
+                                  onSaved: (String password) {
+                                    newUser.password = password;
+                                  }),
+                              new RoundedButton(
+                                  buttonName: "Continue",
+                                  onTap: _handleSubmitted,
+                                  width: screenSize.width,
+                                  height: 50.0,
+                                  bottomMargin: 10.0,
+                                  borderWidth: 1.0)
+                            ],
+                          )),
+                      new TextButton(
+                        buttonName: "Terms & Condition",
+                        onPressed: _onPressed,
+                        buttonTextStyle: buttonTextStyle,
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
