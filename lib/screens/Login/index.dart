@@ -45,14 +45,22 @@ class LoginScreenState extends State<LoginScreen> {
       showInSnackBar('Please fix the errors in red before submitting.');
     } else {
       form.save();
-      userAuth.verifyUser(user).then((onValue) {
-        if (onValue == "Login Successfull")
-          Navigator.pushNamed(context, "/HomePage");
-        else
-          showInSnackBar(onValue);
+      //print("here onval");
+      Navigator.pushNamed(context, "/HomePage");
+     /* userAuth.verifyUser(user).then((onValue) {
+        Navigator.pushNamed(context, "/HomePage");
+        //if (onValue == "Login Successfull")
+        //  Navigator.pushNamed(context, "/HomePage");
+        //else
+        //  showInSnackBar(onValue);
       }).catchError((PlatformException onError) {
+        print("Kanto theres an error");
         showInSnackBar(onError.message);
       });
+
+      */
+
+
     }
   }
 
@@ -67,29 +75,53 @@ class LoginScreenState extends State<LoginScreen> {
         body: new SingleChildScrollView(
             controller: scrollController,
             child: new Container(
-              padding: new EdgeInsets.all(16.0),
+              //padding: new EdgeInsets.all(16.0),
               decoration: new BoxDecoration(image: backgroundImage),
               child: new Column(
                 children: <Widget>[
                   new Container(
-                    height: screenSize.height / 2,
+                   // height: screenSize.height / 4,
                     child: new Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        new Center(
-                            child: new Image(
-                          image: logo,
-                          width: (screenSize.width < 500)
-                              ? 120.0
-                              : (screenSize.width / 4) + 12.0,
-                          height: screenSize.height / 4 + 20,
-                        ))
+                        new Stack(
+                          children: <Widget>[
+                            new Container(
+                              width:screenSize.width,
+                              height: screenSize.height * 0.20,
+                        decoration: new BoxDecoration(
+                                    image: rectangle),
+
+                            child: new Container(
+
+
+                                child: new Image(
+                                  alignment: Alignment.bottomLeft,
+                                  image: logo,
+                                  width: screenSize.width *0.005,
+
+                                  height: screenSize.height *0.005,
+                                )),
+                            )],
+                        ),
                       ],
                     ),
                   ),
+                        new Container(
+                         // height: screenSize.height / 4,
+                       child:  new Center(
+                            child: new Image(
+                              image: plogo,
+                              alignment: Alignment.center,
+                              width: screenSize.width * 0.8,
+                              height: screenSize.height *0.30,
+                            ))),
+
                   new Container(
-                    height: screenSize.height / 2,
+                    height: screenSize.height *0.50,
+                    width: screenSize.width *0.80,
+                  // decoration:new BoxDecoration(color: Colors.white) ,
                     child: new Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -99,6 +131,7 @@ class LoginScreenState extends State<LoginScreen> {
                           autovalidate: autovalidate,
                           child: new Column(
                             children: <Widget>[
+
                               new InputField(
                                   hintText: "Email",
                                   obscureText: false,
@@ -127,33 +160,37 @@ class LoginScreenState extends State<LoginScreen> {
                                     user.password = password;
                                   }),
                               new RoundedButton(
-                                buttonName: "Get Started",
+
+                                buttonName: "Log In",
                                 onTap: _handleSubmitted,
                                 width: screenSize.width,
                                 height: 50.0,
                                 bottomMargin: 10.0,
                                 borderWidth: 0.0,
+
                                 buttonColor: primaryColor,
                               ),
+                              new Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  new TextButton(
+                                      buttonName: "New Account",
+                                      onPressed: () => onPressed("/SignUp"),
+                                      buttonTextStyle: buttonTextStyle),
+                                  new TextButton(
+                                      buttonName: "Need Help?",
+                                      onPressed: _onPressed,
+                                      buttonTextStyle: buttonTextStyle)
+                                ],
+                              )
                             ],
                           ),
-                        ),
-                        new Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            new TextButton(
-                                buttonName: "Create Account",
-                                onPressed: () => onPressed("/SignUp"),
-                                buttonTextStyle: buttonTextStyle),
-                            new TextButton(
-                                buttonName: "Need Help?",
-                                onPressed: _onPressed,
-                                buttonTextStyle: buttonTextStyle)
-                          ],
                         )
                       ],
                     ),
                   )
+                  ,
+
                 ],
               ),
             )));

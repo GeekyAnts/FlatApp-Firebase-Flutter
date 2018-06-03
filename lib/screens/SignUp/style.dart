@@ -6,7 +6,10 @@ TextStyle headingStyle = new TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+ExactAssetImage logo = new ExactAssetImage("assets/Cluster/Login/PLogo.png");
+
+
 DecorationImage backgroundImage = new DecorationImage(
-  image: new ExactAssetImage('assets/signup-screen-background.png'),
+  image: new ExactAssetImage('assets/Cluster/Login/loginbg.png'),
   fit: BoxFit.cover,
 );
