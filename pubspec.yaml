@@ -6,8 +6,6 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   image_picker: 0.1.1                                             # new
   google_sign_in: 0.3.1                                           # new
   firebase_analytics: 0.0.4                                       # new
@@ -36,6 +34,11 @@ flutter:
     - assets/Cluster/Login/Rectangle.png
     - assets/Cluster/Login/PUSH.png
     - assets/Cluster/SignUp/BuildingBG.png
+    - assets/Cluster/SideBarMenu/Layer2.png
+    - assets/Cluster/Profile/TheGuy.png
+    - assets/Cluster/Profile/location.png
+    - assets/Cluster/FindAGig/backroundfg.png
+    - assets/Cluster/FindAGig/Danish.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/.
