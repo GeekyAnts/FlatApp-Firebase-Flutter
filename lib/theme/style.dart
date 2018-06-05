@@ -22,3 +22,16 @@ TextStyle buttonTextStyle = const TextStyle(
     fontSize: 14.0,
     fontFamily: "Roboto",
     fontWeight: FontWeight.bold);
+
+TextStyle drawerTextStyle = const TextStyle(
+    color: Colors.white,
+    fontSize: 14.0,
+    fontFamily: "Roboto",
+    fontWeight: FontWeight.bold);
+
+
+TextStyle draweHeaderHelloTextStyle = const TextStyle(
+    color: Colors.white,
+    fontSize: 14.0,
+    fontFamily: "Roboto",
+    fontWeight: FontWeight.bold);
