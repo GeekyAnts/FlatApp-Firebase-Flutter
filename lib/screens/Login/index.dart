@@ -171,6 +171,7 @@ class LoginScreenState extends State<LoginScreen> {
                                 buttonColor: primaryColor,
                               ),
                               new Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   new TextButton(
