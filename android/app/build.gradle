@@ -25,7 +25,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.yourcompany.flutterflatapp"
+        applicationId "com.enigma.flutterflatapp"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1

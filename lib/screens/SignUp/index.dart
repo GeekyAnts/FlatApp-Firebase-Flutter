@@ -50,101 +50,133 @@ class SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    Size screenSize = MediaQuery.of(context).size;
-    //print(context.widget.toString());
+    Size screenSize = MediaQuery
+        .of(context)
+        .size;
+    print(context.widget.toString());
     return new Scaffold(
         key: _scaffoldKey,
         body: new SingleChildScrollView(
-          child: new Container(
-            padding: new EdgeInsets.all(16.0),
-            decoration: new BoxDecoration(image: backgroundImage),
-            child: new Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                new SizedBox(
-                    height: screenSize.height / 2,
+            child: new Container(
+              padding: new EdgeInsets.all(16.0),
+              decoration: new BoxDecoration(image: backgroundImage),
+              child: new Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+
+                    new Container(
+                      height:screenSize.height * 0.8,
+                      //decoration: BoxDecoration(color: signUPGrey),
+                      child: new Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[ new Container(
+
+                              child: new Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+
+                                    new Center(
+                                    child: new Image(
+
+                                      image: logo,
+                                      width: screenSize.width *0.5,
+
+                                      height: screenSize.height *0.1,
+                                    ),
+
+
+                                    ),
+                                    new Text("CREATE ACCOUNT",textAlign: TextAlign.center,
+                                        style: headingStyle)
+                                  ])
+                          )
+                          , new Container(
+
+                            child: new Column(
+                              children: <Widget>[
+                                new Form(
+                                    key: _formKey,
+                                    autovalidate: _autovalidate,
+                                    //onWillPop: _warnUserAboutInvalidData,
+                                    child: new Column(
+                                      children: <Widget>[
+                                        new InputField(
+                                          hintText: "Username",
+                                          obscureText: false,
+                                          textInputType: TextInputType.text,
+                                          textStyle: textStyle,
+                                          textFieldColor: textFieldColor,
+                                          icon: Icons.person_outline,
+                                          iconColor: Colors.white,
+                                          bottomMargin: 20.0,
+                                          validateFunction: _validations
+                                              .validateName,
+                                          onSaved: (String name) {
+                                            newUser.displayName = name;
+                                          },
+                                        ),
+                                        new InputField(
+                                            hintText: "Email",
+                                            obscureText: false,
+                                            textInputType: TextInputType
+                                                .emailAddress,
+                                            textStyle: textStyle,
+                                            textFieldColor: textFieldColor,
+                                            icon: Icons.mail_outline,
+                                            iconColor: Colors.white,
+                                            bottomMargin: 20.0,
+                                            validateFunction: _validations
+                                                .validateEmail,
+                                            onSaved: (String email) {
+                                              newUser.email = email;
+                                            }),
+                                        new InputField(
+                                            hintText: "Password",
+                                            obscureText: true,
+                                            textInputType: TextInputType.text,
+                                            textStyle: textStyle,
+                                            textFieldColor: textFieldColor,
+                                            icon: Icons.lock_open,
+                                            iconColor: Colors.white,
+                                            bottomMargin: 40.0,
+                                            validateFunction:
+                                            _validations.validatePassword,
+                                            onSaved: (String password) {
+                                              newUser.password = password;
+                                            }),
+
+                                      ],
+                                    ))
+                              ],
+                            ),
+                          )
+                          ]
+
+                      ),
+                    ),
+                  new Container(
+                    height: screenSize.height* 0.2,
                     child: new Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        new Text(
-                          "CREATE ACCOUNT",
-                          textAlign: TextAlign.center,
-                          style: headingStyle,
-                        )
-                      ],
-                    )),
-                new SizedBox(
-                  height: screenSize.height / 2,
-                  child: new Column(
                     children: <Widget>[
-                      new Form(
-                          key: _formKey,
-                          autovalidate: _autovalidate,
-                          //onWillPop: _warnUserAboutInvalidData,
-                          child: new Column(
-                            children: <Widget>[
-                              new InputField(
-                                hintText: "Username",
-                                obscureText: false,
-                                textInputType: TextInputType.text,
-                                textStyle: textStyle,
-                                textFieldColor: textFieldColor,
-                                icon: Icons.person_outline,
-                                iconColor: Colors.white,
-                                bottomMargin: 20.0,
-                                validateFunction: _validations.validateName,
-                                onSaved: (String name) {
-                                  newUser.displayName = name;
-                                },
-                              ),
-                              new InputField(
-                                  hintText: "Email",
-                                  obscureText: false,
-                                  textInputType: TextInputType.emailAddress,
-                                  textStyle: textStyle,
-                                  textFieldColor: textFieldColor,
-                                  icon: Icons.mail_outline,
-                                  iconColor: Colors.white,
-                                  bottomMargin: 20.0,
-                                  validateFunction: _validations.validateEmail,
-                                  onSaved: (String email) {
-                                    newUser.email = email;
-                                  }),
-                              new InputField(
-                                  hintText: "Password",
-                                  obscureText: true,
-                                  textInputType: TextInputType.text,
-                                  textStyle: textStyle,
-                                  textFieldColor: textFieldColor,
-                                  icon: Icons.lock_open,
-                                  iconColor: Colors.white,
-                                  bottomMargin: 40.0,
-                                  validateFunction:
-                                      _validations.validatePassword,
-                                  onSaved: (String password) {
-                                    newUser.password = password;
-                                  }),
-                              new RoundedButton(
-                                  buttonName: "Continue",
-                                  onTap: _handleSubmitted,
-                                  width: screenSize.width,
-                                  height: 50.0,
-                                  bottomMargin: 10.0,
-                                  borderWidth: 1.0)
-                            ],
-                          )),
+                      new RoundedButton(
+                          buttonName: "Sign Up",
+                          onTap: _handleSubmitted,
+                          width: screenSize.width,
+                          height: 50.0,
+                          bottomMargin: 10.0,
+                          borderWidth: 1.0),
+
                       new TextButton(
-                        buttonName: "Terms & Condition",
-                        onPressed: _onPressed,
-                        buttonTextStyle: buttonTextStyle,
-                      )
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ),
-        ));
+                      buttonName: "Terms & Condition",
+                      onPressed: _onPressed,
+                      buttonTextStyle: buttonTextStyle,
+                    )],
+                  ))]),
+            )
+        )
+    );
   }
+
 }

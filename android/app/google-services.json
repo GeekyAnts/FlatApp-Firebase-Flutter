@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "144448274489",
+    "firebase_url": "https://testfirebase-983a3.firebaseio.com",
+    "project_id": "testfirebase-983a3",
+    "storage_bucket": "testfirebase-983a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144448274489:android:c34d78df7d0a5df0",
+        "android_client_info": {
+          "package_name": "com.enigma.flutterflatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144448274489-nlr09gpga1abn5hqtbo2ok7e9u0ifb55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuBScM6Jb3ImG46x9y-PK0PosgpgCOe5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
