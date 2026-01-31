@@ -11,6 +11,15 @@ This project is integrated with Firebase for user authentication and contains al
 * Form Validation
 * Firebase Authentication
     
+
+## About
+
+   Flutter app with Firebase integration by [GeekyAnts](https://geekyants.com?utm_source=github&utm_medium=opensource&utm_campaign=flatapp-firebase-flutter).
+
+   For [Flutter development](https://geekyants.com/hire-flutter-developers?utm_source=github&utm_medium=opensource&utm_campaign=flatapp-firebase-flutter)
+   and [mobile engineering](https://geekyants.com/service/hire-mobile-app-development-services?utm_source=github&utm_medium=opensource&utm_campaign=flatapp-firebase-flutter),
+   [contact us](https://geekyants.com/hire?utm_source=github&utm_medium=opensource&utm_campaign=flatapp-firebase-flutter).
+
 ## Getting Started
 **Note:** Make sure your Flutter environment is [setup](https://flutter.io/getting-started/).
 
