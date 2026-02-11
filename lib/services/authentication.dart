@@ -15,6 +15,10 @@ class UserAuth {
   String statusMsg="Account Created Successfully";
   //To create new User
   Future<String> createUser(UserData userData) async{
+    print("HERE");
+    print(userData.email);
+    print(userData.password);
+
     FirebaseAuth firebaseAuth = FirebaseAuth.instance;
     await firebaseAuth
         .createUserWithEmailAndPassword(
@@ -24,9 +28,11 @@ class UserAuth {
 
   //To verify new User
   Future<String> verifyUser (UserData userData) async{
+    print("dfs");
     FirebaseAuth firebaseAuth = FirebaseAuth.instance;
     await firebaseAuth
         .signInWithEmailAndPassword(email: userData.email, password: userData.password);
+    print("fdr");
     return "Login Successfull";
   }
 }
